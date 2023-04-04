@@ -98,7 +98,8 @@ else
 
 ## Clevercloud
 
-- https://www.clever-cloud.com/doc/deploy/application/php/tutorials/tutorial-laravel/
+- https://www.clever-cloud.com/doc/administrate
+    - https://www.clever-cloud.com/doc/deploy/application/php/tutorials/tutorial-laravel/
 - https://www.youtube.com/watch?v=ZWEbZhFk4bs
 
 `clevercloud/php.json`
@@ -231,7 +232,10 @@ In server:
 2. `crontab -e`
 3. `* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1`
 
-In Clevercloud server: https://www.clever-cloud.com/doc/administrate/cron/
+In Clevercloud server: 
+
+- https://www.clever-cloud.com/doc/administrate/cron
+- https://www.clever-cloud.com/doc/deploy/application/php/tutorials/tutorial-laravel/#optional-configure-task-scheduling
 
 `clevercloud/cron.json`
 
@@ -253,3 +257,6 @@ pushd "$APP_HOME"
 
 To find the paths to the php executable: https://github.com/Ruslan-Aliyev/Laravel8_Newest_Notes#get-servers-info-from-within-laravel
 
+## Pipeline and filters
+
+https://dev.to/abrardev99/pipeline-pattern-in-laravel-278p
