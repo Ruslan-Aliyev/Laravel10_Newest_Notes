@@ -29,12 +29,16 @@ https://www.positronx.io/laravel-pdf-tutorial-generate-pdf-with-dompdf-in-larave
 
 ### With non-Latin characters
 
-https://bloglaptrinh.info/laravel-dompdf-font-issue/
+- https://github.com/barryvdh/laravel-dompdf/issues/79
+- https://github.com/barryvdh/laravel-dompdf/issues/290
+- https://stackoverflow.com/questions/45714545/dompdf-package-other-languages-support-in-laravel
+- https://blog.kongnir.com/2017/11/28/laravel-dompdf-custom-font-to-support-simplified-chinese/
+- https://bloglaptrinh.info/laravel-dompdf-font-issue/
 
 1. Have the font `ttf`
 2. Have this script: https://github.com/dompdf/utils/blob/master/load_font.php
 3. Make directory: `storage/fonts/`
-4. Run: `gzip fonts/simsun.ttf.gz && php load_font.php simsun ./fonts/simsun.ttf`
+4. Run: `gzip fonts/simsun.ttf.gz && php load_font.php simsun ./fonts/simsun.ttf` (May also need to run: `php artisan cache:clear && php artisan route:cache && php artisan route:clear`)
 
 If you get `Undefined array key "storage/fonts/font-name"`, then go into `storage/fonts/installed-fonts.json` and change all the `storage\/fonts\/font-name` to `font-name`.
 
@@ -44,6 +48,11 @@ If you get `Undefined array key "storage/fonts/font-name"`, then go into `storag
 	- https://github.com/thephpleague/flysystem
 		- https://flysystem.thephpleague.com/docs/guides/laravel-usage/
 			- https://laravel.com/docs/10.x/filesystem#s3-driver-configuration
+
+- https://github.com/aws/aws-sdk-php-laravel
+- https://iwconnect.com/working-with-amazonaws-s3-creds-in-laravel/
+- https://readouble.com/laravel/8.x/en/filesystem.html
+- https://www.clever-cloud.com/doc/deploy/addon/cellar/
 
 1. `composer require league/flysystem-aws-s3-v3`
 
