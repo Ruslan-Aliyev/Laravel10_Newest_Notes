@@ -2,6 +2,9 @@
 
 `composer create-project --prefer-dist laravel/laravel project_name "10.*"`
 
+## Notable changes from Laravel 8 to 10
+
+- In version 9.19, Vite became the default bundler
 
 ## Non-Latin fonts in BarryVDH PDF generation
 
