@@ -4,7 +4,7 @@
 
 ## Notable changes from Laravel 8 to 10
 
-- In version 9.19, Vite became the default bundler
+- In version 9.19, Vite became the default bundler: https://www.youtube.com/playlist?list=PLDc9bt_00KcJaUEt9_WLioydKazVJwaXZ , https://www.youtube.com/watch?v=KCrXgy8qtjM , https://www.youtube.com/watch?v=epMbfE37014
 
 ## Non-Latin fonts in BarryVDH PDF generation
 
